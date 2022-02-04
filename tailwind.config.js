@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       padding: {
         full: "100%",
+        18: "72px",
       },
       fontFamily: {
         fancy: ["Arbutus Slab", "serif"],
