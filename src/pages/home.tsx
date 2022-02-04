@@ -53,7 +53,9 @@ export default function Home() {
           <Board guesses={[...guesses, currentGuess]} />
         </div>
 
-        <Keyboard onKeyboardEvent={handleKeyEvent} />
+        <div className="pb-16 md:pb-0">
+          <Keyboard onKeyboardEvent={handleKeyEvent} />
+        </div>
       </div>
     </main>
   );
