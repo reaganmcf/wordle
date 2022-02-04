@@ -1,11 +1,10 @@
-import { abort } from "process";
 import React, { useState } from "react";
 import Board from "../components/Board";
 import Header from "../components/Header";
 import Keyboard, { KeyEvent, row1, row2, row3 } from "../components/Keyboard";
 
 export default function Home() {
-  const [guesses, setGuesses] = useState<string[]>([]);
+  const [guesses, _setGuesses] = useState<string[]>([]);
   const [currentGuess, setCurrentGuess] = useState<string>("");
 
   const handleKeyEvent = (e: KeyEvent) => {
