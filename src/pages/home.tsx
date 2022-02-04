@@ -49,11 +49,13 @@ export default function Home() {
         style={{ maxWidth: 500 }}
       >
         <Header />
-        <div className="grow mt-8 md:mt-32">
+        <div className="grow mt-8 md:mt-20">
           <Board guesses={[...guesses, currentGuess]} />
         </div>
 
-        <Keyboard onKeyboardEvent={handleKeyEvent} />
+        <div className="pb-16 md:pb-0">
+          <Keyboard onKeyboardEvent={handleKeyEvent} />
+        </div>
       </div>
     </main>
   );
