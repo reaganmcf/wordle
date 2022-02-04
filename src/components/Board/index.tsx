@@ -1,13 +1,14 @@
 import React from "react";
 import BoardRow from "../BoardRow";
 
-interface GameGridProps {}
-export default function Board(props: GameGridProps) {
-  const guesses = ["apple", "berry"];
+type BoardProps = {
+  guesses: string[];
+};
+export default function Board({ guesses }: BoardProps) {
   const rows = [0, 1, 2, 3, 4, 5].map((guessIndex) => {
     const currWord =
       guessIndex < guesses.length ? guesses[guessIndex] : "     ";
-    return <BoardRow guess={currWord} />;
+    return <BoardRow key={guessIndex} guess={currWord} />;
   });
 
   return (
