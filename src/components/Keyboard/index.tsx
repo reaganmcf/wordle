@@ -80,7 +80,7 @@ function Key({ char, onClick, thick = false }: KeyProps) {
 
   return (
     <button
-      className="flex-1 flex items-center font-bold ml-1 h-14 cursor-pointer select-none bg-slate-400 text-slate-50 rounded-md"
+      className="flex-1 flex items-center font-bold ml-1 h-14 cursor-pointer select-none bg-slate-400 text-slate-50 rounded"
       style={{ flex: `${thick ? 1.5 : 1.0}` }}
       onClick={handleClick}
     >
