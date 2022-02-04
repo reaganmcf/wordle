@@ -14,7 +14,7 @@ export default function Board({ guesses }: BoardProps) {
   return (
     <div
       className="grid grid-rows-6 gap-1 mx-auto"
-      style={{ width: 350, height: 420 }}
+      style={{ width: 300, height: 370 }}
     >
       {rows}
     </div>
