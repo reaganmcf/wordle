@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main
       tabIndex={0}
-      className="m-0 bg-slate-800 w-screen h-screen outline-none safari_only"
+      className="m-0 bg-slate-800 w-screen h-screen outline-none overflow-y-hidden"
       onKeyDown={handleRawKeyPress}
     >
       <div
