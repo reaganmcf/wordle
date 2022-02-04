@@ -1,4 +1,4 @@
-export default [
+const words = [
   "aahed",
   "aalii",
   "aargh",
@@ -10657,3 +10657,5 @@ export default [
   "zymes",
   "zymic",
 ];
+
+export default words;

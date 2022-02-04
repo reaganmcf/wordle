@@ -1,4 +1,4 @@
-@keyframes PopIn {
+@keyframes popIn {
   from {
     transform: scale(0.8);
     opacity: 0;
@@ -10,30 +10,26 @@
   }
 }
 
-@-webkit-keyframes shakeX {
-  from,
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
+    opacity: 1;
   }
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes shakeX {
   from,
   to {
@@ -57,8 +53,4 @@
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
-}
-.animate__shakeX {
-  -webkit-animation-name: shakeX;
-  animation-name: shakeX;
 }

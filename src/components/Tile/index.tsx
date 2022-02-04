@@ -15,7 +15,7 @@ export default function Tile({ content, state = "present" }: TileProps) {
       style={{
         fontSize: "2rem",
         lineHeight: "2rem",
-        animationName: tileIsEmpty ? "" : "PopIn",
+        animationName: tileIsEmpty ? "" : "popIn",
         animationDuration: "100ms",
       }}
     >
