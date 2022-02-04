@@ -7,8 +7,12 @@ body {
   @apply bg-slate-800;
 }
 
-* {
-  -webkit-padding-start: 0px;
+@media screen and (max-width: 767px) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari_only {
+    padding-bottom: 65px; /* resize  */
+  }
 }
 
 /*body {

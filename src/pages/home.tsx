@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main
       tabIndex={0}
-      className="m-0 bg-slate-800 w-screen h-screen outline-none"
+      className="m-0 bg-slate-800 w-screen h-screen outline-none safari_only"
       onKeyDown={handleRawKeyPress}
     >
       <div
@@ -49,7 +49,7 @@ export default function Home() {
         style={{ maxWidth: 500 }}
       >
         <Header />
-        <div className="grow mt-32">
+        <div className="grow mt-8 md:mt-32">
           <Board guesses={[...guesses, currentGuess]} />
         </div>
 
