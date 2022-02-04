@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main
       tabIndex={0}
-      className="m-0 bg-slate-800 w-screen h-screen outline-none overflow-y-hidden"
+      className="m-0 bg-slate-800 absolute inset-0 outline-none overflow-y-hidden"
       onKeyDown={handleRawKeyPress}
     >
       <div
@@ -53,9 +53,7 @@ export default function Home() {
           <Board guesses={[...guesses, currentGuess]} />
         </div>
 
-        <div className="pb-16 md:pb-0">
-          <Keyboard onKeyboardEvent={handleKeyEvent} />
-        </div>
+        <Keyboard onKeyboardEvent={handleKeyEvent} />
       </div>
     </main>
   );
